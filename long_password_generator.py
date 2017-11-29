@@ -1,4 +1,5 @@
-import os, string, random
+#!/usr/bin/env python
+import string, random
 
 # alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_'
 alphabet = string.ascii_letters + string.digits + '-' + '_'
@@ -7,4 +8,4 @@ alphabet = string.ascii_letters + string.digits + '-' + '_'
 r = random.SystemRandom()
 password = ''.join([r.choice(alphabet) for _ in range(24)])
 
-print password
+print(password)
